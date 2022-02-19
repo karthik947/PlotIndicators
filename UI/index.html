@@ -7,6 +7,22 @@
             width: 100vw;
             height: 100vh;
         }
+        #ohlc{
+            font-weight: bold;
+        }
+        .green{
+            color: green;
+        }
+        .red{
+            color: red;
+        }
+        #rsi{
+            color: purple;
+            z-index: 10;
+            position: absolute;
+            top: 1.5rem;
+            left: 0.75rem;
+        }
     </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,6 +30,12 @@
     <title>TV Indicators</title>
 </head>
 <body>
+    <div id="ohlc">
+        <p>O<span class="green">12</span> H<span class="green">15</span> L<span class="green">8</span> C<span class="green">13</span> </p>
+    </div>
+    <div id="rsi">
+        <p>56.2</p>
+    </div>
     <div id="tvchart"></div>
 </body>
 <script src="tv.js"></script>
